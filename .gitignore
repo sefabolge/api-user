@@ -1,0 +1,23 @@
+# Frontend ignores
+node_modules/
+dist/
+.vite/
+.env
+.env.*.local
+
+# Backend ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# Logs
+logs/
+*.log
+
+# IDE/OS ignores
+.DS_Store
+.vscode/
+.idea/
