@@ -7,14 +7,9 @@ This FastAPI backend fetches and reformats user data from [Reqres.in](https://re
 ## 1. Clone project folder
 ```
 git clone https://github.com/sefabolge/api-user.git
+cd api-user
 ```
-### 2. Create `.env` file:
-
-```
-copy .env-example .env
-cp .env-example .env
-```
-## 3.  Create and activate a venv and instal dependencies
+## 2.  Create and activate a venv and instal dependencies
 ```
 cd backend
 python -m venv venv
@@ -28,6 +23,12 @@ pip install -r requirements.txt
 # Run backend locally
 uvicorn app.main:app --reload
 
+```
+### 3. Create `.env` file:
+
+```
+copy .env-example .env
+cp .env-example .env
 ```
 
 ## Docker Usage
