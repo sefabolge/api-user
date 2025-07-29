@@ -1,4 +1,4 @@
-# Line-Up Coding Exercise – Backend
+# User api
 
 This FastAPI backend fetches and reformats user data from [Reqres.in](https://reqres.in) and exposes it via a clean REST API.
 
