@@ -2,9 +2,9 @@
 
 This FastAPI backend fetches and reformats user data from [Reqres.in](https://reqres.in) and exposes it via a clean REST API.
 
-## Getting Started
+### Getting Started - Backend
 
-### 1. Clone project folder
+## 1. Clone project folder
 ```
 git clone https://github.com/sefabolge/api-user.git
 ```
@@ -14,7 +14,7 @@ git clone https://github.com/sefabolge/api-user.git
 copy .env-example .env
 cp .env-example .env
 ```
-### 3.  Create and activate a venv and instal dependencies
+## 3.  Create and activate a venv and instal dependencies
 ```
 cd backend
 python -m venv venv
@@ -32,7 +32,7 @@ uvicorn app.main:app --reload
 
 ## Docker Usage
 
-### Build image and run:
+## Build image and run:
 
 ```bash
 docker build -t lineup-backend .
@@ -75,11 +75,9 @@ Response:
 pytest
 ```
 
-###  Frontend – React + TypeScript (User Info Viewer)
+###  Getting Started - Frontend
 This is a React app that fetches and displays user data from the FastAPI backend.
 - User data is fetched from `/api/v1/user/:id
-
-## Getting Started
 
 # 1. Create `.env` file:
 ```
@@ -91,9 +89,11 @@ cp .env-example .env
 ```
 npm install
 npm run dev
+
+-http://localhost:5173/user/2
 ```
 
-### Folder Descriptions if need for future
+### Folder Structure Notes (for Future Expansion)
 
 - `utils/`: Shared utility functions (e.g., formatters, helpers).
 - `styles/`: Global CSS, theme configuration, and design tokens.
